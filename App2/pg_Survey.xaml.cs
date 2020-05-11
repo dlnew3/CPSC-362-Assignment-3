@@ -27,7 +27,7 @@ namespace App2
         //Initializes the textbox txt_Survey with a relevant survey item to gather info related to the item
         public void loadSurvey(string surveyItem)
         {
-            txt_SurveyItem.Text = surveyItem;
+            txt_SurveyItem.Text = surveyItem + "? :";
         }
         //============================================================================
 
@@ -48,6 +48,10 @@ namespace App2
                 this.Frame.Navigate(typeof(MainPage));
             }
         }
+        //============================================================================
+
+        //
+
         //============================================================================
 
         //When pg_Survey is navigated to; attempts to receive a string array from MainPage

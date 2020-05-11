@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.ViewManagement;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -137,7 +138,15 @@ namespace App2
         {
             // Selects random item from array and submits to pg_Survey
             Random rand = new Random();
-            this.Frame.Navigate(typeof(BlankPage1), arr_SurvOptions[rand.Next(arr_SurvOptions.Length + 1)]);
+            this.Frame.Navigate(typeof(BlankPage1), arr_SurvOptions[rand.Next(arr_SurvOptions.Length)]);
+        }
+
+        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (e.NewSize.Width < 800 || e.NewSize.Height < 600)
+            {
+                ApplicationView.GetForCurrentView().TryResizeView(new Size(800, 600));
+            }
         }
     }
 }

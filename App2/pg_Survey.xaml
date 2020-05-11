@@ -9,14 +9,23 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="pageTitle" Text="Survey" />
-        <Button x:Name="btn_Return" Content="Return" HorizontalAlignment="Right" Margin="0,600,50,0" Grid.Row="1" VerticalAlignment="Top" Click="Btn_Return_Click" Width="78" Height="32"/>
-        <Button x:Name="btn_submit" Content="Submit" HorizontalAlignment="Left" Margin="50,600,68,0" Grid.Row="1" VerticalAlignment="Top" Click="Btn_submit_Click" Width="78" Height="32"/>
+        <TextBlock x:Name="txt_pageTitle" HorizontalAlignment="Stretch" Margin="10,10,367,736" Text="Survey" RenderTransformOrigin="0.5,0.5" >
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleX="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock Margin="11,44,0,687" Text="Please select anywhere from 1-5 stars. Answer both questions for full survey rewards
+" TextWrapping="Wrap" HorizontalAlignment="Left" Width="401" TextDecorations="Underline"/>
+        <Button x:Name="btn_Return" Content="Return" HorizontalAlignment="Right" Margin="0,0,50,116" VerticalAlignment="Bottom" Click="Btn_Return_Click" Width="78" Height="32"/>
+        <Button x:Name="btn_submit" Content="Submit" HorizontalAlignment="Left" Margin="50,0,0,116" VerticalAlignment="Bottom" Click="Btn_submit_Click" Width="78" Height="32"/>
         <TextBlock x:Name="txt_Survey1" HorizontalAlignment="Left" Margin="50,98,0,0" Text="How would you rate" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="txt_Survey2" HorizontalAlignment="Left" Margin="50,220,0,0" Text="How likely would you recommend it to friends? : " TextWrapping="Wrap" VerticalAlignment="Top"/>
         <RatingControl x:Name="rtg_Survey1" HorizontalAlignment="Left" Margin="50,122,0,0" VerticalAlignment="Top"/>
         <RatingControl x:Name="rtg_Survey2" HorizontalAlignment="Left" Margin="50,244,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="txt_SurveyItem" HorizontalAlignment="Left" Margin="180,98,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
+
     </Grid>
 </Page>
+
+    

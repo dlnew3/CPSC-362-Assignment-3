@@ -10,16 +10,15 @@
 
     <Grid>
         <TextBlock x:Name="pageTitle" Text="Surve-ice" />
-        <Border x:Name="brdr_Balance" BorderBrush="Black" Margin="40,40,236,300.2" BorderThickness="1,1,1,1" VerticalAlignment="Stretch"/>
-        <TextBlock x:Name="txt_CurrBal" HorizontalAlignment="Left" Margin="48,47,0,0" Text="Current Balance:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="txt_Balance" HorizontalAlignment="Left" Margin="154,47,0,0" Text="$0.00" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Border x:Name="brdr_SurveyField" BorderBrush="Black" HorizontalAlignment="Stretch" Height="428" Margin="19,160,19,0" VerticalAlignment="Top" Grid.RowSpan="2" Padding="1,1,1,1" BorderThickness="1,1,1,1"/>
-        <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Right" Margin="0,283,68,0" Grid.Row="1" VerticalAlignment="Top" Click="Btn_Exit_Click" Width="78" Height="32"/>
-        <Button x:Name="btn_Survey" Content="Survey" HorizontalAlignment="Left" Margin="80,283,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Btn_Survey_Click"/>
+        <Border x:Name="brdr_Balance" BorderBrush="Black" Margin="40,40,236,244" BorderThickness="1,1,1,1" VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="txt_CurrBal" HorizontalAlignment="Left" Margin="48,47,0,0" Text="Current Balance:" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="101"/>
+        <TextBlock x:Name="txt_Balance" HorizontalAlignment="Left" Margin="154,47,0,0" Text="$0.00" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="33"/>
+        <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Right" Margin="0,0,75,118" Grid.Row="1" VerticalAlignment="Bottom" Click="Btn_Exit_Click" Width="78" Height="32"/>
+        <Button x:Name="btn_Survey" Content="Survey" HorizontalAlignment="Left" Margin="67,0,0,118" Grid.Row="1" VerticalAlignment="Bottom" Click="Btn_Survey_Click" Width="62" Height="32"/>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="373*"/>
-            <RowDefinition Height="395*"/>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="121*"/>
         </Grid.RowDefinitions>
 
     </Grid>
